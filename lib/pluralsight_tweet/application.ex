@@ -9,6 +9,8 @@ defmodule PluralsightTweet.Application do
     children = [
       # Starts a worker by calling: PluralsightTweet.Worker.start_link(arg)
       # {PluralsightTweet.Worker, arg}
+      PluralsightTweet.TweetServer,
+      PluralsightTweet.Scheduler
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
